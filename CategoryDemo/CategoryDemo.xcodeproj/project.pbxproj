@@ -18,6 +18,8 @@
 		588954B4236FCECB0052BBC4 /* CategoryDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 588954B3236FCECB0052BBC4 /* CategoryDemoUITests.m */; };
 		588954C8236FCF450052BBC4 /* UIButton+ImageTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 588954C5236FCF450052BBC4 /* UIButton+ImageTitleStyle.m */; };
 		588954CB236FCF840052BBC4 /* UIView+WMFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 588954CA236FCF840052BBC4 /* UIView+WMFrame.m */; };
+		58F0279E2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0279D2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m */; };
+		58F027A22431F4DE009CE84C /* NSObject+swizzledMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F027A02431F4DD009CE84C /* NSObject+swizzledMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,11 @@
 		588954C5236FCF450052BBC4 /* UIButton+ImageTitleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleStyle.m"; sourceTree = "<group>"; };
 		588954C9236FCF840052BBC4 /* UIView+WMFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMFrame.h"; sourceTree = "<group>"; };
 		588954CA236FCF840052BBC4 /* UIView+WMFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WMFrame.m"; sourceTree = "<group>"; };
+		58F0279C2431F4A8009CE84C /* UINavigationController+WMSafeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WMSafeTransition.h"; sourceTree = "<group>"; };
+		58F0279D2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WMSafeTransition.m"; sourceTree = "<group>"; };
+		58F027A02431F4DD009CE84C /* NSObject+swizzledMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+swizzledMethod.m"; sourceTree = "<group>"; };
+		58F027A12431F4DD009CE84C /* NSObject+swizzledMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+swizzledMethod.h"; sourceTree = "<group>"; };
+		58F027A32431F515009CE84C /* WMCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMCategory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +154,12 @@
 		588954C2236FCF450052BBC4 /* Categorise */ = {
 			isa = PBXGroup;
 			children = (
+				58F0279F2431F4C1009CE84C /* NSObject */,
+				58F0279B2431F407009CE84C /* UINavigationController */,
 				588954C3236FCF450052BBC4 /* UIButton */,
 				588954C6236FCF450052BBC4 /* UIView */,
 				588954C7236FCF450052BBC4 /* NSString */,
+				58F027A32431F515009CE84C /* WMCategory.h */,
 			);
 			name = Categorise;
 			path = ../../Categorise;
@@ -178,6 +188,24 @@
 			children = (
 			);
 			path = NSString;
+			sourceTree = "<group>";
+		};
+		58F0279B2431F407009CE84C /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				58F0279C2431F4A8009CE84C /* UINavigationController+WMSafeTransition.h */,
+				58F0279D2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		58F0279F2431F4C1009CE84C /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				58F027A12431F4DD009CE84C /* NSObject+swizzledMethod.h */,
+				58F027A02431F4DD009CE84C /* NSObject+swizzledMethod.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +342,9 @@
 				588954C8236FCF450052BBC4 /* UIButton+ImageTitleStyle.m in Sources */,
 				58895494236FCEC50052BBC4 /* ViewController.m in Sources */,
 				5889548E236FCEC50052BBC4 /* AppDelegate.m in Sources */,
+				58F027A22431F4DE009CE84C /* NSObject+swizzledMethod.m in Sources */,
 				5889549F236FCECB0052BBC4 /* main.m in Sources */,
+				58F0279E2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m in Sources */,
 				58895491236FCEC50052BBC4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,7 +3,7 @@
 //  AjMall
 //
 //  Created by Minger on 2020/3/30.
-//  Copyright © 2020 YouXianMing. All rights reserved.
+//  Copyright © 2020 Minger. All rights reserved.
 //
 
 #import "UINavigationController+WMSafeTransition.h"

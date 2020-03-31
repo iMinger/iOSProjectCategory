@@ -3,7 +3,7 @@
 //  AjMall
 //
 //  Created by Minger on 2019/9/30.
-//  Copyright © 2019 YouXianMing. All rights reserved.
+//  Copyright © 2019 Minger. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

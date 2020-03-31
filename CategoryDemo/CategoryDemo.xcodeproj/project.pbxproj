@@ -20,6 +20,8 @@
 		588954CB236FCF840052BBC4 /* UIView+WMFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 588954CA236FCF840052BBC4 /* UIView+WMFrame.m */; };
 		58F0279E2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0279D2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m */; };
 		58F027A22431F4DE009CE84C /* NSObject+swizzledMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F027A02431F4DD009CE84C /* NSObject+swizzledMethod.m */; };
+		58F027A62432E0EB009CE84C /* NSString+WMPercentEncodingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F027A52432E0EB009CE84C /* NSString+WMPercentEncodingHandle.m */; };
+		58F027AD2432E939009CE84C /* UIImage+WMSolidColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F027AC2432E939009CE84C /* UIImage+WMSolidColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		58F027A02431F4DD009CE84C /* NSObject+swizzledMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+swizzledMethod.m"; sourceTree = "<group>"; };
 		58F027A12431F4DD009CE84C /* NSObject+swizzledMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+swizzledMethod.h"; sourceTree = "<group>"; };
 		58F027A32431F515009CE84C /* WMCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMCategory.h; sourceTree = "<group>"; };
+		58F027A42432E0EB009CE84C /* NSString+WMPercentEncodingHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WMPercentEncodingHandle.h"; sourceTree = "<group>"; };
+		58F027A52432E0EB009CE84C /* NSString+WMPercentEncodingHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WMPercentEncodingHandle.m"; sourceTree = "<group>"; };
+		58F027AB2432E939009CE84C /* UIImage+WMSolidColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+WMSolidColor.h"; sourceTree = "<group>"; };
+		58F027AC2432E939009CE84C /* UIImage+WMSolidColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WMSolidColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 		588954C2236FCF450052BBC4 /* Categorise */ = {
 			isa = PBXGroup;
 			children = (
+				58F027A72432E8F6009CE84C /* UIImage */,
 				58F0279F2431F4C1009CE84C /* NSObject */,
 				58F0279B2431F407009CE84C /* UINavigationController */,
 				588954C3236FCF450052BBC4 /* UIButton */,
@@ -186,6 +193,8 @@
 		588954C7236FCF450052BBC4 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				58F027A42432E0EB009CE84C /* NSString+WMPercentEncodingHandle.h */,
+				58F027A52432E0EB009CE84C /* NSString+WMPercentEncodingHandle.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -206,6 +215,15 @@
 				58F027A02431F4DD009CE84C /* NSObject+swizzledMethod.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		58F027A72432E8F6009CE84C /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				58F027AB2432E939009CE84C /* UIImage+WMSolidColor.h */,
+				58F027AC2432E939009CE84C /* UIImage+WMSolidColor.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,10 +360,12 @@
 				588954C8236FCF450052BBC4 /* UIButton+ImageTitleStyle.m in Sources */,
 				58895494236FCEC50052BBC4 /* ViewController.m in Sources */,
 				5889548E236FCEC50052BBC4 /* AppDelegate.m in Sources */,
+				58F027A62432E0EB009CE84C /* NSString+WMPercentEncodingHandle.m in Sources */,
 				58F027A22431F4DE009CE84C /* NSObject+swizzledMethod.m in Sources */,
 				5889549F236FCECB0052BBC4 /* main.m in Sources */,
 				58F0279E2431F4A8009CE84C /* UINavigationController+WMSafeTransition.m in Sources */,
 				58895491236FCEC50052BBC4 /* SceneDelegate.m in Sources */,
+				58F027AD2432E939009CE84C /* UIImage+WMSolidColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

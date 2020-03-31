@@ -3,7 +3,7 @@
 //  babyfs
 //
 //  Created by Minger on 2017/9/26.
-//  Copyright © 2017年 QiMengEducation. All rights reserved.
+//  Copyright © 2017年 Minger. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
